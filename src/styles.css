@@ -1,7 +1,87 @@
 *{
-    margin: 0;
-    background-color: rgb(3, 11, 86);
+    margin: 0;    
 }
+
+body{
+    background-color: rgb(2, 2, 23);
+}
+
 img {
     width: 450px;
+}
+
+.box{
+    margin: auto;
+    margin-top: 3%;
+    width: 60%;
+    height: 90vh;
+    background-color: rgba(47, 189, 255, 0.952);
+    display: flex;
+    flex-direction: column;
+
+}
+
+h1{
+    font-size: 100px;
+    font-family: 'Titan One', cursive;
+}
+
+h2{
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+.title-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./assets/plaque.png');
+}
+
+.btn{
+
+    width: 20%;
+    margin: auto;
+    margin-top: 80px;
+    padding: 15px;
+}
+
+button.btn{
+    font-size: 20px;
+    font-family: 'Titan One', cursive;
+    background-color: rgb(255, 136, 0);
+    border-style: none;
+    transition: all 0.5s;
+    border-radius: 8px;
+}
+
+button.btn:hover{
+    background-color: rgba(255, 136, 0, 0.87);
+    cursor: pointer;
+    border-style: none;
+    width: 24%;
+
+}
+
+.joke-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: azure;
+    width: 70%;
+    height: 20vh;
+    margin: auto;
+    margin-top: 50px;
+    overflow-y: auto;
+    border-radius: 10px;
+
+}
+
+article.joke-text{
+
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bolder;
+    text-align: center;
 }

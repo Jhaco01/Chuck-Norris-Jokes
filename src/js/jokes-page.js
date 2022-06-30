@@ -1,21 +1,30 @@
 import { obtenerChiste } from "./http-provider";
 
 const body = document.body;
-let olList, btnOtro;
+let jokeBox, btnOtro;
+const imgSrc = 'assets/img/t-c-023-editable-classroom-award-plaques_ver_1.png'
 
 const crearChistesHtml = () => {
 
-    const html = `  <h1 class="mt-5"> Chistes </h1>
+    const html = `  <div class="title-box">
+                        <h2>The Chuck Norris</h2>    
+                        <h1 class="title"> Jokes </h1>
+                        <h2>Generator</h2>
+                    </div>
+                    
+                    <div class="joke-box"></div>
 
-                    <hr>
-
-                    <button class="btn btn-primary"> Chistes </button>
+                    <button class="btn">New joke</button>
 
                     <ol class="mt-2 list-group">
                     </ol>
     `;
 
     const divChistes = document.createElement('div');
+
+    const divTitle = document.querySelector('.title-box');
+
+    divChistes.classList.add('box');
 
     divChistes.innerHTML = html;
 
@@ -25,18 +34,20 @@ const crearChistesHtml = () => {
 
 const dibujarChiste = ( chiste ) => {
 
-    const listElement = document.createElement('li');
+    const jokeText = document.createElement('article');
 
-    listElement.innerHTML = `${chiste.id} ${chiste.value}`;
+    jokeText.innerHTML = `${chiste.value}`;
 
-    listElement.classList.add('list-group-item');
+    jokeText.classList.add('joke-text');
 
-    olList.append(listElement);
+    jokeBox.innerHTML = "";
 
+    jokeBox.append(jokeText);
+    
 }
 
 const events = () => {
-    olList = document.querySelector('ol');
+    jokeBox = document.querySelector('.joke-box');
     btnOtro  = document.querySelector('button');
 
     btnOtro.addEventListener('click' , async() => {

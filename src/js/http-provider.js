@@ -8,9 +8,9 @@ export const obtenerChiste = async() => {
  
          if (!resp.ok) throw 'No se encontró el recurso';
  
-         const {id, icon_url, value} = await resp.json();
+         const { value } = await resp.json();
          
-         return {id, icon_url, value};
+         return { value };
  
     } catch (error) {
      
