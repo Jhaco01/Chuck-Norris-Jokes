@@ -1,9 +1,11 @@
 *{
     margin: 0;    
+    
 }
 
 body{
     background-color: rgb(2, 2, 23);
+    
 }
 
 img {
@@ -84,4 +86,41 @@ article.joke-text{
     font-family: 'Roboto Mono', monospace;
     font-weight: bolder;
     text-align: center;
+}
+
+@media screen and (max-width: 1080px) and (min-width: 870px) {
+    h1{
+        font-size: 80px;
+    }    
+    button.btn{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+
+    h1{
+        font-size: 60px;
+    }    
+    
+    h2{
+        font-size: 20px;
+    }
+
+    button.btn{
+        font-size: 14px;
+    } 
+
+}
+
+@media screen and (max-width: 830px) {
+
+    .joke-box{
+        height: 25vh;
+    }
+    button.btn{
+        font-size: 14px;       
+        width: 30%;
+    } 
+
 }

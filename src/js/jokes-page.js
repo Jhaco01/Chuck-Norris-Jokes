@@ -14,15 +14,10 @@ const crearChistesHtml = () => {
                     
                     <div class="joke-box"></div>
 
-                    <button class="btn">New joke</button>
-
-                    <ol class="mt-2 list-group">
-                    </ol>
+                    <button class="btn">New joke</button>                    
     `;
 
     const divChistes = document.createElement('div');
-
-    const divTitle = document.querySelector('.title-box');
 
     divChistes.classList.add('box');
 
