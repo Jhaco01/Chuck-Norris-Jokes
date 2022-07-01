@@ -115,6 +115,9 @@ article.joke-text{
 
 @media screen and (max-width: 830px) {
 
+    .box{
+        width: 100%;
+    }
     .joke-box{
         height: 25vh;
     }
