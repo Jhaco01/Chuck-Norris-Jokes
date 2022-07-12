@@ -1,13 +1,3 @@
-# Webpack Starter
+# The Chuck Norris Jokes generator app.
 
-Este es el proyecto inicial para crear aplicaciones utilizando webpack.
-
-### Notas:
-
-Recuerden reconstruir los modulos de node 
-
-```npm install```
-
-Y para construir del build, recuerden:
-
-```npm run build```
+Proyect built on JavaScript with a little of HTML5 and CSS, to show API's consume by fetch usage.
